@@ -1,9 +1,273 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
 
-@charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* ==========================================================================
+   CUSTOM STYLES FOR WISHVA'S PORTFOLIO
+   ========================================================================== */
+
+/* Custom Color Variables */
+:root {
+  --primary-color: #2563eb;      /* Blue */
+  --secondary-color: #10b981;    /* Green */
+  --accent-color: #f59e0b;       /* Orange */
+  --dark-bg: #1e293b;            /* Dark Blue */
+  --light-bg: #f8fafc;           /* Light Gray */
+  --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Enhanced Header/Banner */
+.page__hero {
+  background: var(--gradient-1) !important;
+  color: white;
+}
+
+.page__hero-caption {
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Colorful Section Headers */
+.page__content h2 {
+  background: var(--gradient-2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  border-left: 4px solid var(--primary-color);
+  padding-left: 15px;
+  margin-top: 40px;
+}
+
+.page__content h3 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+
+/* Project Cards Styling */
+.archive__item {
+  border: 1px solid #e2e8f0;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.archive__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.archive__item-teaser {
+  position: relative;
+  overflow: hidden;
+}
+
+.archive__item-teaser img {
+  transition: transform 0.3s ease;
+}
+
+.archive__item:hover .archive__item-teaser img {
+  transform: scale(1.05);
+}
+
+/* Add colored overlay to project images */
+.archive__item-teaser::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.archive__item:hover .archive__item-teaser::after {
+  opacity: 0.2;
+}
+
+/* Skill Tags/Badges */
+.skill-tag {
+  display: inline-block;
+  background: var(--gradient-1);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  margin: 3px;
+  font-weight: bold;
+}
+
+.skill-tag.ai { background: var(--gradient-2); }
+.skill-tag.iot { background: var(--gradient-3); }
+.skill-tag.research { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; }
+.skill-tag.data { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); color: #333; }
+
+/* Enhanced Author Profile */
+.author__avatar img {
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+}
+
+.author__content h3 {
+  background: var(--gradient-1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Social Media Links */
+.author__urls a {
+  transition: all 0.3s ease;
+}
+
+.author__urls a:hover {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+/* Enhanced Navigation */
+.greedy-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.greedy-nav a {
+  transition: color 0.3s ease;
+}
+
+.greedy-nav a:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Progress Bars for Skills */
+.skill-bar {
+  background: #e2e8f0;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 10px 0;
+}
+
+.skill-progress {
+  background: var(--gradient-1);
+  height: 20px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  padding: 0 10px;
+}
+
+/* Call-to-Action Buttons */
+.cta-button {
+  display: inline-block;
+  background: var(--gradient-1);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+  color: white;
+  text-decoration: none;
+}
+
+.cta-button.secondary {
+  background: var(--gradient-2);
+}
+
+.cta-button.accent {
+  background: var(--gradient-3);
+}
+
+/* Project Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-ongoing {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-research {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+/* Enhanced Footer */
+.page__footer {
+  background: var(--dark-bg);
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .archive__item {
+    margin-bottom: 20px;
+  }
+  
+  .skill-tag {
+    font-size: 0.7em;
+    padding: 3px 8px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light-bg: #1e293b;
+  }
+  
+  .archive__item {
+    background: #334155;
+    border-color: #475569;
+  }
+}
+
+/* Animation for loading */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.archive__item {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.archive__item:nth-child(2) { animation-delay: 0.1s; }
+.archive__item:nth-child(3) { animation-delay: 0.2s; }
+.archive__item:nth-child(4) { animation-delay: 0.3s; }
