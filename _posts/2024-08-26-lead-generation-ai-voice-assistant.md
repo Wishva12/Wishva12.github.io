@@ -11,6 +11,8 @@ header:
 
 Developed an AI voice assistant specifically designed for telecom lead generation, featuring real-time voice interaction, contextual responses, and comprehensive analytics dashboard.
 
+![System Architecture](/assets/images/voice-assistant-architecture.png)
+
 ## Key Features
 
 - **RAG-based Contextual Responses** - Intelligent context understanding using retrieval-augmented generation
@@ -27,6 +29,8 @@ Developed an AI voice assistant specifically designed for telecom lead generatio
 - **UI Framework:** Tkinter for desktop interface, Streamlit for web dashboard
 - **APIs:** mSpace APIs for telecom integration
 - **Language:** Python
+
+![Streamlit Dashboard](/assets/images/voice-assistant-dashboard.png)
 
 ## Technical Implementation
 
