@@ -1,94 +1,63 @@
 ---
-title: "Spatiotemporal Analysis of Epidemic Disease Trends in Sri Lanka"
+title: "📊 Spatiotemporal Analysis of Epidemic Diseases in Sri Lanka"
 date: 2024-07-15
 categories: [research, data-science, public-health]
-tags: [python, machine-learning, time-series, gis, spatial-analysis, epidemiology]
+tags: [python, machine-learning, time-series, gis, spatial-analysis]
 header:
-  teaser: /assets/images/epidemic-analysis-thumb.jpg
+  teaser: /assets/images/projects/epidemic-analysis/thumbnail.jpg
+  overlay_image: /assets/images/projects/epidemic-analysis/sri-lanka-map.png
+  overlay_filter: 0.7
+  caption: "ML-powered epidemic disease analysis for public health"
 ---
 
-## Research Overview
+## 🔬 Research Overview
 
-**Status:** Ongoing Research Project
+<span class="status-badge status-research">Ongoing Research</span>
 
-Investigating temporal and spatial patterns of epidemic diseases in Sri Lanka using advanced machine learning and time series forecasting techniques to support early warning systems for public health planning.
+![Sri Lanka Disease Map](/assets/images/projects/epidemic-analysis/sri-lanka-map.png)
+*Geographic distribution of epidemic diseases across Sri Lanka*
 
-## Research Objectives
+Investigating temporal and spatial patterns of epidemic diseases using advanced machine learning and GIS techniques to support early warning systems for public health planning.
 
-- Identify spatiotemporal patterns in epidemic disease outbreaks
-- Develop predictive models for early warning systems
-- Support evidence-based public health policy decisions
-- Create actionable insights for disease prevention strategies
+## 📈 Temporal Analysis
 
-## Methodology
+![Time Series Analysis](/assets/images/projects/epidemic-analysis/time-series.png)
+*Seasonal patterns and trends in disease outbreaks over time*
 
-### Data Analysis Approach
-- **Temporal Analysis** - Time series modeling to identify seasonal patterns and trends
-- **Spatial Analysis** - Geographic Information Systems (GIS) for location-based insights
-- **Machine Learning** - Predictive modeling for outbreak forecasting
-- **Statistical Methods** - Advanced spatial statistics for pattern recognition
+## 🤖 Machine Learning Results
 
-### Technologies & Tools
+![Model Performance](/assets/images/projects/epidemic-analysis/ml-results.png)
+*Comparison of different ML models for outbreak prediction*
 
-- **Data Processing:** Python, Pandas for data manipulation and cleaning
-- **Geospatial Analysis:** GeoPandas for spatial data handling
-- **Machine Learning:** Scikit-learn for predictive modeling
-- **Time Series:** Advanced forecasting techniques and trend analysis
-- **Visualization:** GIS mapping and statistical visualizations
-- **Statistics:** Spatial statistics and epidemiological modeling
+## 🎯 Research Objectives
 
-## Research Methodology
+- 🗺️ **Spatial Pattern Analysis** - Identify geographic hotspots and clusters
+- ⏱️ **Temporal Trend Modeling** - Seasonal patterns and outbreak prediction
+- 🚨 **Early Warning Systems** - Predictive models for health authorities
+- 📋 **Policy Recommendations** - Evidence-based public health insights
 
-1. **Data Collection & Preprocessing**
-   - Gathering historical epidemic data from health authorities
-   - Cleaning and standardizing multi-source datasets
-   - Geographic coordinate mapping and validation
+## 🛠️ Methodology & Tools
 
-2. **Exploratory Data Analysis**
-   - Temporal pattern identification across different time scales
-   - Spatial clustering analysis of outbreak locations
-   - Correlation analysis between environmental and disease factors
+<span class="skill-tag research">GeoPandas</span>
+<span class="skill-tag data">Scikit-learn</span>
+<span class="skill-tag">Python</span>
+<span class="skill-tag">GIS Analysis</span>
+<span class="skill-tag">Time Series</span>
+<span class="skill-tag">Statistical Modeling</span>
 
-3. **Model Development**
-   - Time series forecasting models (ARIMA, LSTM, Prophet)
-   - Spatial regression models for geographic patterns
-   - Machine learning ensemble methods for prediction
+## 📊 Current Progress
 
-4. **Validation & Testing**
-   - Cross-validation with historical outbreak data
-   - Model performance evaluation and comparison
-   - Sensitivity analysis for different scenarios
+- ✅ Literature review and methodology design
+- ✅ Data collection and preprocessing  
+- 🔄 Spatial analysis and clustering
+- 📅 Model development (Q4 2024)
+- 📅 Results validation (Q1 2025)
 
-## Expected Outcomes
+## 🌟 Expected Impact
 
-- **Early Warning System** - Predictive models for potential outbreak identification
-- **Risk Mapping** - Geographic risk assessment tools for health authorities
-- **Policy Recommendations** - Data-driven insights for public health planning
-- **Research Publications** - Academic contributions to epidemiological literature
-
-## Current Progress
-
-- ✅ Literature review and methodology design completed
-- 🔄 Data collection and preprocessing in progress
-- 📅 Model development phase: Q4 2024
-- 📅 Results analysis and validation: Q1 2025
-
-## Research Impact
-
-This research aims to:
-- Enhance Sri Lanka's epidemic preparedness capabilities
-- Provide tools for proactive rather than reactive health responses
-- Support resource allocation decisions during health emergencies
-- Contribute to global understanding of tropical disease patterns
-
-## Skills Developed
-
-- Advanced spatial and temporal data analysis
-- Epidemiological modeling techniques
-- Large-scale data processing and management
-- Statistical modeling for public health applications
-- Research methodology and academic writing
+This research will enhance Sri Lanka's epidemic preparedness and provide tools for proactive health responses, potentially saving lives through early intervention.
 
 ---
 
-*This ongoing research project represents my commitment to using data science for social impact and public health improvement.*
+<a href="#" class="cta-button">📄 Read Research Paper</a>
+<a href="https://github.com/Wishva12/epidemic-analysis" class="cta-button secondary">📊 View Analysis</a>

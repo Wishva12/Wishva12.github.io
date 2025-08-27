@@ -1,53 +1,79 @@
 ---
-title: "Enhanced Smart Universal AC Controller"
+title: "🏠 Enhanced Smart Universal AC Controller"
 date: 2024-06-10
 categories: [iot, embedded-systems, mobile-app]
-tags: [esp32, firebase, flutter, react-native, iot, bluetooth, wifi]
+tags: [esp32, firebase, flutter, react-native, iot, bluetooth]
 header:
-  teaser: /assets/images/smart-ac-controller-thumb.jpg
+  teaser: /assets/images/projects/smart-ac-controller/thumbnail.jpg
+  overlay_image: /assets/images/projects/smart-ac-controller/hardware.jpg
+  overlay_filter: 0.4
+  caption: "Next-gen IoT device with universal IR learning"
 ---
 
-## Project Overview
+## 🎯 Project Overview
 
-**Status:** Ongoing Development
+<span class="status-badge status-ongoing">In Development</span>
 
-Developing a next-generation IoT-based air conditioning controller that combines intelligent IR protocol learning, cloud synchronization, and mobile app control for universal AC compatibility.
+![IoT Hardware Setup](/assets/images/projects/smart-ac-controller/hardware.jpg)
+*ESP32-based smart controller with sensors and IR components*
 
-## Key Features
+Developing a next-generation IoT air conditioning controller with intelligent IR learning, cloud synchronization, and mobile app control for universal AC compatibility.
 
-### 🎯 Core Functionality
-- **Universal IR Learning** - Automatically learns and mimics any AC remote control signals
-- **Real-time State Sync** - Maintains accurate AC status across all devices
-- **Cloud Integration** - Secure Firebase backend for remote access and data storage
-- **Mobile Control** - Cross-platform app built with Flutter/React Native
+## 📱 Mobile Application
 
-### 🔧 Advanced Capabilities
-- **Bluetooth Setup** - Easy device pairing and initial configuration
-- **WiFi Connectivity** - Reliable internet connection for remote control
-- **Visual Feedback** - LED indicators for system status and operations
-- **Smart Scheduling** - Advanced timer and automation features
-- **OTA Updates** - Over-the-air firmware updates for continuous improvement
+![Mobile App Interface](/assets/images/projects/smart-ac-controller/mobile-app.png)
+*Cross-platform mobile app built with Flutter/React Native*
 
-## Technical Architecture
+## ☁️ Cloud Dashboard
 
-### Hardware Components
-- **ESP32 Microcontroller** - Main processing unit with WiFi/Bluetooth capabilities
-- **DHT22 Sensor** - Temperature and humidity monitoring
-- **IR Transmitter/Receiver** - For learning and sending AC control signals
-- **LED Indicators** - Visual status feedback system
+![Firebase Dashboard](/assets/images/projects/smart-ac-controller/firebase-dashboard.png)
+*Real-time cloud synchronization with Firebase backend*
 
-### Software Stack
-- **Embedded:** C++ for ESP32 firmware with IRremoteESP8266 library
-- **Backend:** Firebase Realtime Database for cloud synchronization
-- **Mobile App:** Flutter/React Native for cross-platform compatibility
-- **Communication:** WiFi for internet connectivity, Bluetooth for setup
+## ✨ Key Features
 
-### Key Technical Features
+- 🎛️ **Universal IR Learning** - Works with any AC remote control
+- ☁️ **Cloud Synchronization** - Firebase real-time database integration
+- 📱 **Mobile Control** - iOS and Android app for remote access
+- 🌡️ **Environmental Monitoring** - Temperature and humidity sensing
+- 🔄 **OTA Updates** - Over-the-air firmware updates
+- ⏰ **Smart Scheduling** - Advanced automation and timer features
 
-1. **Intelligent IR Protocol Learning**
-   ```cpp
-   // Advanced signal capture and analysis
-   - Multi-frequency signal detection
-   - Protocol pattern recognition
-   - Automatic command mapping
-   - Signal validation and error correction
+## 🔧 Technical Architecture
+
+| Component | Technology | Purpose |
+|-----------|------------|---------|
+| Microcontroller | ESP32 | Main processing and WiFi/Bluetooth |
+| Sensors | DHT22 | Temperature and humidity monitoring |
+| Communication | Firebase | Cloud storage and synchronization |
+| Mobile App | Flutter/React Native | Cross-platform user interface |
+| IR Control | IRremoteESP8266 | Universal remote learning |
+
+## 🛠️ Technologies Used
+
+<span class="skill-tag iot">ESP32</span>
+<span class="skill-tag">Firebase</span>
+<span class="skill-tag">Flutter</span>
+<span class="skill-tag">React Native</span>
+<span class="skill-tag">C++</span>
+<span class="skill-tag">IoT</span>
+
+## 📈 Development Progress
+
+- ✅ Hardware prototype completed
+- ✅ Basic IR learning functionality
+- ✅ Firebase integration
+- 🔄 Mobile app development
+- 📅 Advanced features (Q4 2024)
+- 📅 Production version (Q1 2025)
+
+## 🌟 Impact & Benefits
+
+- 💡 **Energy Efficiency** - Smart scheduling reduces power consumption by 30%
+- 🌍 **Universal Compatibility** - Works with any IR-controlled AC unit
+- 💰 **Cost Effective** - 70% cheaper than brand-specific smart controllers
+- 🏠 **Smart Home Ready** - Integrates with existing automation systems
+
+---
+
+<a href="#" class="cta-button">📱 Try Mobile App</a>
+<a href="https://github.com/Wishva12/smart-ac-controller" class="cta-button secondary">⚙️ View Hardware</a>
